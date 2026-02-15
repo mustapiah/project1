@@ -1,0 +1,14 @@
+pipeline {
+    agent {
+        node {
+            label 'Ubuntu' // Jenkins akan mencari agent dengan label 'Ubuntu'
+        }
+    }
+    stages {
+        stage('Hello World') {
+            steps {
+                echo 'Berhasil menjalankan Jenkinsfile dari GitHub!'
+            }
+        }
+    }
+}
